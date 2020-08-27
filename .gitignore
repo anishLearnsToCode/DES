@@ -1,0 +1,6 @@
+.idea
+out
+dist
+*.iml
+venv
+__pycache__
