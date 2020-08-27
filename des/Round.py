@@ -1,4 +1,6 @@
-from des import NoneSwapper, Swapper, Mixer
+from des.NoneSwapper import NoneSwapper
+from des.Swapper import Swapper
+from des.Mixer import Mixer
 
 
 class Round:

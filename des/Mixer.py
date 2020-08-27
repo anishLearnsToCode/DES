@@ -1,5 +1,6 @@
 from des.utils import *
-from des import PBox, SBox
+from des.PBox import PBox
+from des.SBox import SBox
 
 
 class Mixer:

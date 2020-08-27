@@ -1,4 +1,6 @@
-from des import PBox
+from des.PBox import PBox
+from des.Mixer import Mixer
+from des.Round import Round
 from des.utils import *
 
 
@@ -19,6 +21,14 @@ class DES:
         for round in self.rounds[::-1]:
             binary = round.decrypt(binary)
         return binary
+
+    def encrypt_number(self, number: int) -> int:
+        binary = int_to_bin(number, block_size=64)
+        return int(self.encrypt(binary), base=2)
+
+    def decrypt_number(self, number: int) -> int:
+        binary = int_to_bin(number, block_size=64)
+        return int(self.decrypt(binary), base=2)
 
     def encrypt_message(self, plaintext: str) -> list:
         result = [0] * len(plaintext)
