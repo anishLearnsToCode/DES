@@ -1,5 +1,7 @@
 # 🗝 DES (Data Encryption Standard)
 
+![made-with-python](https://img.shields.io/badge/Made%20with-Python%203-1f425f.svg)
+
 ## Introduction
 The __Data Encryption Standard (DES)__ is a symmetric-key block cipher published by the __National Institute of 
 Standards and Technology (NIST)__. Here, DES has been implemented in Python 3 with no other dependencies. A full 
