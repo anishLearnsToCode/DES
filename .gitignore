@@ -4,3 +4,4 @@ dist
 *.iml
 venv
 __pycache__
+notebook/.ipynb_checkpoints
